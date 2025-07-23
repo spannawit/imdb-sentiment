@@ -245,4 +245,3 @@ Once degradation is detected:
 ## Notes
 - This API uses a single trained model.
 - You can switch or extend the model by editing `model_utils.py`.
-- The current model expects preprocessed input compatible with DistilBERT tokenizer.
