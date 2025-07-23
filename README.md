@@ -41,7 +41,7 @@ Due to strict time constraints and focus on demonstrating a complete end-to-end 
 - Cleaned raw HTML (`<br />`) and lowercased reviews.
 - Visualized label distributions, word clouds, n-grams.
 - Analyzed lexical features, outliers, and sentiment trends.
-- Used tools like spaCy, TextBlob, and Gensim for NER, polarity scoring, and topic modeling.
+- Used tools like spaCy, TextBlob, and Gensim for NER, polarity scoring.
 
 ### 2. Text Vectorization
 - Used TF-IDF for classical models and tokenizer-based encoding for deep models.
@@ -67,7 +67,6 @@ Due to strict time constraints and focus on demonstrating a complete end-to-end 
 ### 6. Containerization and Dev Support
 - Used Docker for deployment and VSCode devcontainers.
 - Managed Python dependencies via Poetry.
-- Downloaded model from external source if `.env` provides link.
 
 ### 7. Documentation
 - Generated API docs with FastAPI.
