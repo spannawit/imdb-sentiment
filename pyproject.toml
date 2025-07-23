@@ -1,0 +1,51 @@
+[tool.black]
+line-length = 79
+
+[tool.ruff]
+line-length = 79
+select = ["I001"]
+src = ["src", "scripts"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+addopts = "--doctest-modules"
+doctest_optionflags = ["NORMALIZE_WHITESPACE", "IGNORE_EXCEPTION_DETAIL"]
+
+[tool.poetry]
+name = "imdb-sentiment-analysis"
+version = "0.1.0"
+description = "IMDb Movie Review Sentiment Classifier with FastAPI"
+authors = ["Pannawit Samatthiyadikun"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+black = { version = "25.1.0", extras = ["jupyter"] }
+ruff = "0.12.4"
+
+fastapi = "0.116.1"
+uvicorn = "0.35.0"
+torch = "2.7.1"
+transformers = "4.53.2"
+pandas = "2.3.1"
+numpy = "1.26.4"
+scikit-learn = "1.7.1"
+scipy = "1.10.1"
+matplotlib = "3.10.3"
+seaborn = "0.13.2"
+wordcloud = "1.9.4"
+pytest = "8.4.1"
+httpx = "0.28.1"
+shap = "0.48.0"
+evidently = "0.7.11"
+jupyterlab = "4.4.4"
+nltk = "3.9.1"
+spacy = "3.8.2"
+gensim = "4.3.2"
+sentencepiece = "0.2.0"
+textblob = "0.19.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
