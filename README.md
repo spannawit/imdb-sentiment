@@ -80,11 +80,10 @@ Due to strict time constraints and focus on demonstrating a complete end-to-end 
 
 ### Requirements
 
-* At least **16GB RAM** for Docker container
-
 * **Trained Models**
-  1. `models.zip` file contains trained classification model package file, downloaded from **privately provided link** (not publicly exposed for security reason.)
-  2. Unzip the `models.zip` file at the project root directory. It should result the following project directory structure.
+  1. At least **2GB RAM** for Docker container
+  2. `models.zip` file contains trained classification model package file, downloaded from **privately provided link** (not publicly exposed for security reason.)
+  3. Unzip the `models.zip` file at the project root directory. It should result the following project directory structure.
 
 ```
 imdb-sentiment/
@@ -116,9 +115,10 @@ imdb-sentiment/
 ```
 
 * **Otherwise**, the models need to be trained from scratch
-  1. Create empty `models` folder
-  2. Execute Jupyter Notebooks in `notebook` folder from `01-03` in order, which may takes about 14 hours when fine-tuning BERT model.
-  3. Then rerun the container to try serving the BERT model again.
+  1. At least **16GB RAM** for Docker container and model training
+  2. Create empty `models` folder
+  3. Execute Jupyter Notebooks in `notebook` folder from `01-03` in order, which may takes about 14 hours when fine-tuning BERT model.
+  4. Then rerun the container to try serving the BERT model again.
 
 ### Build Image
 ```bash
