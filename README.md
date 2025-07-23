@@ -109,7 +109,8 @@ imdb-sentiment/
 │       ├── test_main.py
 │       └── test_model_utils.py
 ├── .gitignore
-├── requirements.txt
+├── mkdocs.yml
+├── pyproject.toml
 ├── Dockerfile
 ├── README.md
 ```
